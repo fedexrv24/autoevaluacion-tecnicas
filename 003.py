@@ -1,0 +1,1 @@
+mail = input("Ingrese un mail: ").strip()
