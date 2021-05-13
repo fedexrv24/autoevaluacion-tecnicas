@@ -14,3 +14,6 @@ while True:
                 print("Error. Ingrese un numero.")
 
         numeros = input("Ingrese numero o enter para salir: ").strip()
+
+resultado = tot / prom
+print(resultado)
