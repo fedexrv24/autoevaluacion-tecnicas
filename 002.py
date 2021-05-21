@@ -1,5 +1,4 @@
-prom = 0
-tot = 0
+total = []
 numeros = input("Ingrese numero: ").strip()
 
 while True:
@@ -7,13 +6,15 @@ while True:
                 break
         try:
                 decimal = float(numeros)
-                tot += decimal
-                prom += 1
+                total.append(decimal)
 
         except ValueError:
                 print("Error. Ingrese un numero.")
 
         numeros = input("Ingrese numero o enter para salir: ").strip()
 
-resultado = tot / prom
-print(resultado)
+prom = 0
+for i in total:
+    prom += i
+
+print(prom/len(total))
